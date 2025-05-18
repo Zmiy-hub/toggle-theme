@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boock shop BEM</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/icon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container">
+          <div class="header__logo">
+            <a class="logo" href="#">
+              <img
+                src="./img/logo.svg"
+                alt="Book Shop Logo"
+                class="logo__image"
+              />
+            </a>
+          </div>
+          <div class="header__basket basket">
+            <ul class="basket__list">
+              
+              <li class="basket__item">
+                <a class="basket__link" href="#">0,00 €</a>
+              </li>
+              <li class="basket__item">
+                <a href="#" class="basket">
+                  <img
+                    src="img/basket_icon.svg"
+                    alt="Cart"
+                    class="cart__icon"
+                  />
+                  <span class="basket__count">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="main-nav">
+            <a href="#" class="main-nav__link">Shop by Category</a>
+
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <button id="swich-theme" class="main-nav__btn">Swich theme</button>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Order Status</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Wishlist</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Sign in/Join</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog">
+        <div></div>
+        <div class="container">
+          <h1 class="catalog__title">
+            Bestsellers - our most popular items, updated daily
+          </h1>
+          <div class="card__wrapper">
+            <article class="card">
+              <span class="card__hit">Hit</span>
+
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-1.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Final Offer</h2>
+                <h3 class="card__subtitle">Lauren Asher</h3>
+                <p class="card__price">16,05 €</p>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">
+                    Add to basket
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__new">New</span>
+
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-2.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">It Ends With Us: The most</h2>
+                <h3 class="card__subtitle">Colleen Hoover</h3>
+                <p class="card__price">10,52 €</p>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--end">End up</button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__hit">Hit</span>
+              <span class="card__discount">10% off</span>
+
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-3.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Add to basket</h2>
+                <h3 class="card__subtitle">James Clear</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">19,75 €</p>
+                  <p class="card__price-old">22,00 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">
+                    Add to basket
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-4.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">The Creative Act</h2>
+                <h3 class="card__subtitle">Rick Rubin</h3>
+                <p class="card__price card__price--origin">29,45 €</p>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">
+                    Add to basket
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__hit">Hit</span>
+              <span class="card__discount">16% off</span>
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-5.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Spare</h2>
+                <h3 class="card__subtitle">Prince Harry the Duke of Sussex</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">11,51 €</p>
+                  <p class="card__price-old">11,50 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">
+                    Add to basket
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__new">New</span>
+              <span class="card__discount card__discount--special">11% off</span>
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-6.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Digital Minimalism</h2>
+                <h3 class="card__subtitle">Cal Newport</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">11,94 €</p>
+                  <p class="card__price-old">13,50 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">
+                    Add to basket
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__hit">Hit</span>
+              <span class="card__discount">7% off</span>
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-7.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Meditations</h2>
+                <h3 class="card__subtitle">Marcus Aurelius</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">10,65 €</p>
+                  <p class="card__price-old">11,50 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">
+                    Add to basket
+                  </button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-8.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">How to Think Like a Roman...</h2>
+                <h3 class="card__subtitle">Donald Robertson</h3>
+                <p class="card__price">15,75 €</p>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--end">End up</button>
+                </div>
+              </footer>
+            </article>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-9.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">The Meditations of Marcus </h2>
+                <h3 class="card__subtitle">Marcus Aurelius</h3>
+                <p class="card__price">10,90 €</p>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">Add to basket</button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__discount card__discount--special alone">20% off</span>
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-10.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Lives of the Stoics </h2>
+                <h3 class="card__subtitle">Ryan Holiday</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">11,51 €</p>
+                  <p class="card__price-old">14,50 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">Add to basket</button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <span class="card__new">New</span>
+              <span class="card__discount card__discount--special ">30% off</span>
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-11.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">Dopamine Nation</h2>
+                <h3 class="card__subtitle">Dr Anna Lembke</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">10,11 €</p>
+                  <p class="card__price-old">14,50 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">Add to basket</button>
+                </div>
+              </footer>
+            </article>
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__figure">
+                  <a href="#"><img
+                    src="./img/image-12.jpg"
+                    alt="Book cover"
+                    class="card__image"
+                  /></a>
+                </figure>
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">I Don't Need Therapy</h2>
+                <h3 class="card__subtitle">Toni Lodge</h3>
+                <div class="card__price-wrapper">
+                  <p class="card__price">21,16 €</p>
+                </div>
+              </div>
+              <footer class="card__footer">
+                <div class="card__actions">
+                  <button class="card__button card__button--basket">Add to basket</button>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+        <button class="chat__button"></button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__dsc">© 2023</p>
+        <p class="footer__dsc">All rights reserved</p>
+      </div>
+
+    </footer>
+
+    <script src='./js/script.js'></script>
+  </body>
+</html>
